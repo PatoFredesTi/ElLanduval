@@ -25,47 +25,47 @@
     <main class="container-fluid pt-4">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-5">
-                <div class="card">
-                    <div class="card-header bg-primary bg-gradient text-light text-center">
+                <div class="card bg-dark">
+                    <div class="card-header bg-secondary bg-gradient text-light text-center">
                         <span class="h2">Registrar Menu</span>
                     </div>
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="nombre-txt" class="form-label">Nombre</label>
-                            <input class="form-control" type="text" id="nombre-txt">
+                            <label for="nombre-txt" class="form-label text-light">Nombre</label>
+                            <input class="form-control bg-secondary text-light" type="text" id="nombre-txt">
                         </div>
                         <div class="mb-3">
-                            <label for="horario-select" class="form-label">Horario</label>
-                            <select id="horario-select" class="form-select">
+                            <label for="horario-select" class="form-label text-light">Horario</label>
+                            <select id="horario-select" class="form-select bg-secondary text-light">
                                 <option value="Desayuno">Desayuno</option>
                                 <option value="Almuerzo">Almuerzo</option>
                                 <option value="Once">Once</option>
-                                <option value="Cena">Cena</option>
+                                <option value="Cena">Cena</option> 
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="valor-int" class="form-label">Valor</label>
-                            <input type="number" id="valor-int" class="form-control">
+                            <label for="valor-int" class="form-label text-light">Valor</label>
+                            <input type="number" id="valor-int" class="form-control bg-secondary text-light">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="descripcion-txt">Descripcion</label>
+                            <label class="form-label text-light" for="descripcion-txt">Descripcion</label>
                             <textarea id="descripcion-txt"></textarea>
                         </div>
                     </div>
                     <div class="card-footer row text-center">
                         <div class="col-12">
-                            <button type="button" class="btn btn-light bg-primary text-light" id="registrar-btn" >Registrar</button>
+                            <button type="button" class="btn btn-light bg-secondary text-light" id="registrar-btn" >Registrar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col col-md col-lg">
                 <div class="card">
-                    <div class="card-header text-center bg-primary bg-gradient text-light">
+                    <div class="card-header text-center bg-secondary bg-gradient text-light">
                         <span class="h3">Mostrar Menus</span>
                     </div>
-                    <div class="card-body">
-                        <table class="table table-bordered border-primary">
+                    <div class="card-body bg-dark">
+                        <table class="table table-bordered border-light text-light">
                             <thead>
                                 <tr>
                                     <th>Nombre</th>

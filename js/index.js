@@ -17,7 +17,6 @@ tinymce.init({
 
 
 const Orden = [];
-
 //Validacion
 function validacion(){
     selector = document.querySelector("#horario-select").value;
@@ -83,10 +82,8 @@ const cargarTabla = () =>{
         let icono = document.createElement("i");
         if (iconoferta() == true){
             icono.classList.add("fas","fa-hand-holding-usd","fa-2x");
-            console.log("hola")
         }else{
             icono.classList.add("fas","fa-receipt","fa-2x");
-            console.log("chao")
         }
         tdOferta.appendChild(icono);
         tr.appendChild(tdNombre);
@@ -104,11 +101,13 @@ document.querySelector("#registrar-btn").addEventListener("click", () => {
     let horario = document.querySelector("#horario-select").value;
     let valor = document.querySelector("#valor-int").value;
     let descripcion = tinymce.get("descripcion-txt").getContent();
+    let oferta = document.querySelector("#valor-int").value;
     let pedido = {};
     pedido.nombre = nombre;
     pedido.horario = horario;
     pedido.valor = valor;
     pedido.descripcion = descripcion;
+    pedido.oferta = oferta;
     validacion();
     if (validacion() == true){
         Orden.push(pedido);
